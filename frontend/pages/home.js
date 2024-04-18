@@ -63,6 +63,7 @@ const ToDoHome = () => {
     console.log(taskTitle)
     createTask(taskTitle, taskStatus, taskDescription, taskDueDate).then(result => {
       console.log('task created')
+      resetForm()
       const updatedTasks = [...tasks, ...result.tasks]
       setTasks(updatedTasks)
     })
