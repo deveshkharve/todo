@@ -172,6 +172,7 @@ const ToDoHome = () => {
                         style= {{border: 'none'}}
                         type="text"
                         value={taskTitle}
+                        placeholder="Task"
                         onChange={(event) => setTaskTitle(event.target.value)}
                         InputProps={{ disableUnderline: true }}
                         fullWidth
@@ -181,6 +182,7 @@ const ToDoHome = () => {
                       <TextField
                         type="text"
                         value={taskDescription}
+                        placeholder="Description..."
                         onChange={(event) => setTaskDescription(event.target.value)}
                         InputProps={{ disableUnderline: true }}
                         fullWidth
