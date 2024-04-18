@@ -14,7 +14,7 @@ const pool = new Pool({
 });
 
 // Create users table
-pool.query(`CREATE TABLE IF NOT EXISTS users (
+pool.query(`DROP TABLE users; CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   username TEXT NOT NULL UNIQUE,
   password TEXT NOT NULL,
@@ -22,7 +22,7 @@ pool.query(`CREATE TABLE IF NOT EXISTS users (
 )`);
 
 // Create tasks table
-pool.query(`CREATE TABLE IF NOT EXISTS tasks (
+pool.query(`DROP TABLE tasks; CREATE TABLE IF NOT EXISTS tasks (
   id SERIAL PRIMARY KEY,
   user_id INTEGER,
   title TEXT NOT NULL,

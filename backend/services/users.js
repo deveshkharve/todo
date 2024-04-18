@@ -57,7 +57,7 @@ const createUser = async (username, password) => {
 
   try {
     const result = await executeQueryBuilder(query);
-    return { message: 'user created successfully', user: result };
+    return { message: 'User created successfully', user: result[0] };
   } catch (error) {
     console.error('Error creating user:', error);
     throw error;
