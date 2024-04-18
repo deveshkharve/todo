@@ -81,3 +81,10 @@ or
 ```
 yarn test
 ```
+
+## Login/Register Page
+<img width="1392" alt="Screenshot 2024-04-18 at 10 38 06 PM" src="https://github.com/deveshkharve/todo/assets/25391492/54a3920d-b346-487c-9509-db1f5bc0b3e6">
+
+
+## Home page
+<img width="1428" alt="Screenshot 2024-04-18 at 10 41 04 PM" src="https://github.com/deveshkharve/todo/assets/25391492/9bb678ab-6fa2-4af6-80c0-e0343a539641">
