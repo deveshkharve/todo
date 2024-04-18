@@ -54,10 +54,9 @@ const ToDoHome = () => {
 
 
   const resetForm = () => {
-    setTasks()
-    setTaskTitle()
-    setTaskStatus()
-    setTaskDescription()
+    setTaskTitle(undefined)
+    setTaskStatus('todo')
+    setTaskDescription(undefined)
   }
   const submitForm = () => {
     console.log(taskTitle)
